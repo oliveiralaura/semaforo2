@@ -61,20 +61,21 @@ $data = json_decode($response, true);
                 
                 if ($res == 'B') {
                     echo "<p>Você está bloqueado(a)</p>";
-                    echo "<img src='$imagemDois' alt='Minha Imagem' class='imagemResultado'>";
+                    echo "<img src='$imagemDois' alt='Minha Imagem' class='imagemResultado fade-in'>";
                     $classe = 'bloqueado';
                 } elseif ($res == 'L') {
                     echo "<p>Você está liberado(a)</p>";
-                    echo "<img src='$imagem' alt='Minha Imagem' class='imagemResultado'>";
+                    echo "<img src='$imagem' alt='Minha Imagem' class='imagemResultado fade-in'>";
                     $classe = 'liberado';
                 } elseif ($res == 'A') {
                     echo "<p>Aguarde!!!</p>";
-                    echo "<img src='$imagemTres' alt='Minha Imagem' class='imagemResultado'>";
+                    echo "<img src='$imagemTres' alt='Minha Imagem' class='imagemResultado fade-in'>";
                     $classe = 'aguardando';
                 } else {
                     echo "<p>Resultado desconhecido para o dia $dia\n</p>";
                 }
             }
+            
         ?>
     </main>
 

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: tahoma;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .imagemResultado{
+        width: 80%;
+        margin: 5px auto;
+    }
+  }
+@media screen and (min-width: 800px) {
+    .imagemResultado{
+        width: 300px;
+        margin: 5px auto;
+        
+    }
+  }
+p{
+    color: rgb(0, 0, 0);
+    margin: 5px auto;
+}
